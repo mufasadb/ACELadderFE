@@ -5,20 +5,22 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CharacterPanel from "./CharacterPanel";
 
-const CharacterList = () => {
+const AccountList = () => {
   const [characters, setCharacters] = useState([]);
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
+  
+
+
   const getCharacter = () => {
-    fetch("http://localhost:3000/api/v1/users/")
+    fetch("http://localhost:3000/accounts/")
       .then((res) => {
-        console.log(res);
         return res.json();
       })
-      .then((chars) => {
-        console.log(chars);
-        setCharacters(chars);
+      .then((acc) => {
+        console.log(acc);
+        setCharacters(acc);
       })
       .catch((e) => {
         // setErrors(e);
@@ -47,17 +49,6 @@ const CharacterList = () => {
   // };
 
   const data = characters.map((c) => {
-    c.image = (
-      <img className="Character-Image" src={`https://npc-image-bucket.s3-ap-southeast-2.amazonaws.com/npc/${c.id}`} alt="words"></img>
-    );
-    // c.delete = (
-    //   <Delete
-    //     character={c}
-    //     type={"character"}
-    //     doUpdate={getCharacter}
-    //   ></Delete>
-    // );
-
 
     return c;
   });
@@ -67,14 +58,10 @@ const CharacterList = () => {
       <MaterialTable
         options={{ filtering: true }}
         columns={[
-          { title: "Name", field: "name" },
-          { title: "League", field: "league" },
-          { title: "Class", field: "class" },
-          // {title:"Asecendancy", field: "ascendancyClass"},
-          { title: "Experience", field: "experience" },
-          { title: "Level", field: "level" },
-          { title: "Account", field: "accountName" },
+          { title: "Name", field: "accountName" },
           { title: "Position", field: "position" },
+          { title: "In Guild Now", field: "isActive" },
+          { title: "Last Grabbed Character Data", field: "lastFetched" }
         ]}
         data={data}
         detailPanel={(rowData) => {
@@ -90,4 +77,4 @@ const CharacterList = () => {
     </ThemeProvider>
   );
 };
-export default CharacterList;
+export default AccountList;
