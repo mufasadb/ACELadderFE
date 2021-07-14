@@ -5,7 +5,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CharacterPanel from "./CharacterPanel";
 
-const CharacterList = () => {
+const CharacterList = (props) => {
   const [characters, setCharacters] = useState([]);
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");

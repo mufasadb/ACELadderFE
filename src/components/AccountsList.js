@@ -13,7 +13,7 @@ const AccountList = () => {
 
 
 
-  const getCharacter = () => {
+  const getCharacter = (props) => {
     fetch(`${props.baseURL}/accounts/`)
       .then((res) => {
         return res.json();

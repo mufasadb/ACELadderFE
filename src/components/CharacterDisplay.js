@@ -109,9 +109,7 @@ const CharacterDisplay = (props) => {
     job: setEditJob,
   };
 
-  const goBack = () => {
-    props.viewHandler(false);
-  };
+
   const getData = () => {
     fetch(`${props.baseURL}/api/v1/npc/${props.id}`)
       .then((res) => {
@@ -453,15 +451,6 @@ const CharacterDisplay = (props) => {
           </Paper>
         </Grid>
       </Grid>
-      <Button
-        variant="contained"
-        className={classes.goBackButton}
-        onClick={() => {
-          goBack();
-        }}
-      >
-        List View
-      </Button>
     </div>
   );
 };

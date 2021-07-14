@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 60,
   },
 }));
-const App = () => {
+const App = (props) => {
   const classes = useStyles();
 
   const [errors, setErrors] = useState();
