@@ -13,6 +13,12 @@ import { Link, Route } from "wouter";
 import Grid from "@material-ui/core/Grid";
 
 const baseURL = "http://localhost:3000";
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  // dev code
+} else {
+  baseURL =
+    "http://ec2-13-211-237-68.ap-southeast-2.compute.amazonaws.com:3000/"
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -67,12 +73,12 @@ const App = () => {
             <a className="link"> Create a New Item</a>
           </Link>
         </Button> */}
-        <Route path="/" component={CharacterList} />
+        <Route path="/" component={CharacterList} baseURL={baseURL} />
         {/* <Route path="/newCharacter" component={CharacterForm} /> */}
         {/* <Route path="/newItem" component={ItemForm} /> */}
-        <Route path="/accounts" component={AccountList} />
+        <Route path="/accounts" component={AccountList} baseURL={baseURL} />
         <Route path="/characters/:id">
-          {(params) => <CharacterDisplay id={params.id} />}
+          {(params) => <CharacterDisplay id={params.id} baseURL={baseURL} />}
         </Route>
         {/* <Route path="/items/:id"> */}
         {/* {(params) => <ItemDisplay id={params.id} />} */}

@@ -10,11 +10,11 @@ const AccountList = () => {
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
-  
+
 
 
   const getCharacter = () => {
-    fetch("http://localhost:3000/accounts/")
+    fetch(`${props.baseURL}/accounts/`)
       .then((res) => {
         return res.json();
       })

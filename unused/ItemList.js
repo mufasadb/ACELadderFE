@@ -11,23 +11,23 @@ const ItemList = () => {
 
 
     const getItem = () => {
-        fetch("http://localhost:3000/api/v1/item")
-          .then((res) => {
-            return res.json();
-          })
-          .then((items) => {
-            console.log(items);
-            setItems(items);
-          })
-          .catch((e) => {
-            // setErrors(e);
-              console.log('errors')
-          });
-      };
+        fetch(`${props.baseURL}/api/v1/item`)
+            .then((res) => {
+                return res.json();
+            })
+            .then((items) => {
+                console.log(items);
+                setItems(items);
+            })
+            .catch((e) => {
+                // setErrors(e);
+                console.log('errors')
+            });
+    };
 
     useEffect(() => {
         getItem();
-      }, []);
+    }, []);
 
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 

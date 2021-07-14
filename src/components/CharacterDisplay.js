@@ -113,7 +113,7 @@ const CharacterDisplay = (props) => {
     props.viewHandler(false);
   };
   const getData = () => {
-    fetch(`http://localhost:3000/api/v1/npc/${props.id}`)
+    fetch(`${props.baseURL}/api/v1/npc/${props.id}`)
       .then((res) => {
         return res.json();
       })

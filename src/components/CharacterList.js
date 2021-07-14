@@ -11,7 +11,7 @@ const CharacterList = () => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const getCharacter = () => {
-    fetch("http://localhost:3000/api/v1/users/")
+    fetch(`${props.baseURL}/api/v1/users/`)
       .then((res) => {
         console.log(res);
         return res.json();
