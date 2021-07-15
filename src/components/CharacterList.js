@@ -5,6 +5,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { Group, Favorite, FavoriteBorder, Person } from '@material-ui/icons';
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CharacterPanel from "./CharacterPanel";
+import { CircularProgress } from '@material-ui/core';
+
 
 const CharacterList = (props) => {
   const [characters, setCharacters] = useState([[]]);
@@ -12,15 +14,17 @@ const CharacterList = (props) => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [filterHC, setFilterHC] = useState([true]);
   const [filterSSF, setFilterSSF] = useState([false]);
-
+  const [loading, setLoading] = useState([true]);
   const getCharacter = () => {
+    console.log(filterHC)
     fetch(`${props.baseURL}/api/v1/users/`, { headers: { hc: filterHC, ssf: filterSSF } })
       .then((res) => {
         return res.json();
       })
       .then((chars) => {
-        console.log(chars);
-        setCharacters(chars);
+        console.log(chars.length);
+        setCharacters(chars)
+        setLoading(false)
       })
       .catch((e) => {
         // setErrors(e);
@@ -31,7 +35,7 @@ const CharacterList = (props) => {
 
   useEffect(() => {
     getCharacter();
-  }, []);
+  }, [filterHC, filterSSF]);
 
   const theme = React.useMemo(
     () =>
@@ -50,12 +54,16 @@ const CharacterList = (props) => {
   // };
 
   const updateHC = () => {
-    setFilterHC(!filterHC);
-    getCharacter();
+    setLoading(true)
+    setFilterHC(!filterHC)
+
+    // getCharacter();
+
   }
   const updateSSF = () => {
+    setLoading(true)
     setFilterSSF(!filterSSF);
-    getCharacter();
+    // getCharacter();
   }
 
   let data = characters
@@ -89,7 +97,13 @@ const CharacterList = (props) => {
   });
 
   let filterHCIcon = filterHC ? <Favorite /> : <FavoriteBorder />
-  let filterSSFIcon = filterSSF ? <Group /> : <Person />
+  let filterSSFIcon = filterSSF ? <Person /> : <Group />
+
+  if (loading) {
+    filterHCIcon = <CircularProgress />
+    filterSSFIcon = <CircularProgress />
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <MaterialTable
