@@ -5,7 +5,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CharacterPanel from "./CharacterPanel";
 
-const AccountList = () => {
+const AccountList = (props) => {
   const [characters, setCharacters] = useState([]);
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -13,7 +13,7 @@ const AccountList = () => {
 
 
 
-  const getCharacter = (props) => {
+  const getCharacter = () => {
     fetch(`${props.baseURL}/accounts/`)
       .then((res) => {
         return res.json();

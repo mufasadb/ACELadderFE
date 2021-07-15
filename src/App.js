@@ -13,11 +13,10 @@ import { Link, Route } from "wouter";
 import Grid from "@material-ui/core/Grid";
 
 let baseURL = "http://localhost:3000";
-// if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-// dev code
-// } else {
-baseURL =
-  "http://ec2-13-211-237-68.ap-southeast-2.compute.amazonaws.com:3000"
+if (process.env.NODE_ENV === 'production') {
+  baseURL =
+    "http://ec2-13-211-237-68.ap-southeast-2.compute.amazonaws.com:3000"
+}
 // }
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 60,
   },
 }));
-const App = (props) => {
+const App = () => {
   const classes = useStyles();
 
   const [errors, setErrors] = useState();
