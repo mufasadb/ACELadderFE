@@ -16,7 +16,7 @@ import Grid from "@material-ui/core/Grid";
 let baseURL = "http://localhost:3000";
 if (process.env.NODE_ENV === 'production') {
   baseURL =
-    "https://api.alphacrucisexile.com"
+    "https://api.alphacrucisexiles.com"
 }
 // }
 
