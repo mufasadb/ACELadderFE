@@ -9,13 +9,14 @@ import CharacterDisplay from "./components/CharacterDisplay";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, Route } from "wouter";
+import Ladder from "./components/Ladder"
 
 import Grid from "@material-ui/core/Grid";
 
 let baseURL = "http://localhost:3000";
 if (process.env.NODE_ENV === 'production') {
   baseURL =
-    "http://ec2-13-211-237-68.ap-southeast-2.compute.amazonaws.com:3000"
+    "https:api.alphacrucisexile.com"
 }
 // }
 
@@ -43,6 +44,11 @@ const App = () => {
         <h1>ACE Ladder</h1>
       </header>
       <div className="App-content">
+        <Button variant="contained">
+          <Link href="/">
+            <a className="link"> Ladder</a>
+          </Link>
+        </Button>
         <Button variant="contained">
           <Link href="/">
             <a className="link"> Characters</a>
@@ -74,8 +80,14 @@ const App = () => {
         </Button> */}
         <Route path="/">
 
+{() => <Ladder baseURL={baseURL} />}
+</Route>
+
+        <Route path="/characters">
+
           {() => <CharacterList baseURL={baseURL} />}
         </Route>
+        
 
         {/* <Route path="/newCharacter" component={CharacterForm} /> */}
         {/* <Route path="/newItem" component={ItemForm} /> */}

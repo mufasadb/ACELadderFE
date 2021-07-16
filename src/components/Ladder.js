@@ -8,7 +8,7 @@ import CharacterPanel from "./CharacterPanel";
 import { CircularProgress } from '@material-ui/core';
 
 
-const CharacterList = (props) => {
+const Ladder = (props) => {
   const [characters, setCharacters] = useState([[]]);
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -17,7 +17,7 @@ const CharacterList = (props) => {
   const [loading, setLoading] = useState([true]);
   const getCharacter = () => {
     console.log(filterHC)
-    fetch(`${props.baseURL}/api/v1/users/`, { headers: { hc: filterHC, ssf: filterSSF } })
+    fetch(`${props.baseURL}/api/v1/users/`, { headers: { hc: filterHC, ssf: filterSSF, top: 25 } })
       .then((res) => {
         return res.json();
       })
@@ -107,8 +107,8 @@ const CharacterList = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <MaterialTable
-        title={"Characters"}
-        options={{ filtering: false, sorting: false }}
+        title={"Ladder"}
+        options={{ filtering: false, sorting: false, paging: false }}
         columns={[
           { title: "Name", field: "name" },
           { title: "League", field: "league" },
@@ -146,4 +146,4 @@ const CharacterList = (props) => {
     </ThemeProvider>
   );
 };
-export default CharacterList;
+export default Ladder;

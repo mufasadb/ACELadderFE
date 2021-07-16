@@ -56,6 +56,7 @@ const AccountList = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <MaterialTable
+        title={"Account List"}
         options={{ filtering: true }}
         columns={[
           { title: "Name", field: "accountName" },
