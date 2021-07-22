@@ -6,6 +6,8 @@ import { Group, Favorite, FavoriteBorder, Person } from '@material-ui/icons';
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import CharacterPanel from "./CharacterPanel";
 import { CircularProgress } from '@material-ui/core';
+import { ReactComponent as DeadIcon} from "../img/dead.svg"
+// import skullImage from "/img/dead.svg"
 
 
 const CharacterList = (props) => {
@@ -68,8 +70,13 @@ const CharacterList = (props) => {
 
   let data = characters
   data = data.map((c) => {
+    c.dedaIcon = ""
+    if (c.isAlive) {
+      // c.deadIcon = <img src={process.env.PUBLIC_URL + '/img/dead.svg'} /> 
+      c.deadIcon = <DeadIcon />
+    }
     switch (c.class) {
-      case "0":
+      default :
         c.className = "Scion"
         break;
 
@@ -108,8 +115,9 @@ const CharacterList = (props) => {
     <ThemeProvider theme={theme}>
       <MaterialTable
         title={"Characters"}
-        options={{ filtering: false, sorting: false }}
+        options={{ filtering: true, sorting: false }}
         columns={[
+          { title: "Position", field: "position" },
           { title: "Name", field: "name" },
           { title: "League", field: "league" },
           { title: "Class", field: "ascendancy" },
@@ -119,7 +127,7 @@ const CharacterList = (props) => {
           { title: "Experience", field: "experience", defaultSort: "asc", customSort: (a, b) => b.experience - a.experience },
           { title: "Level", field: "level" },
           { title: "Account", field: "accountName" },
-          { title: "Position", field: "position" },
+          { title: "", field: "deadIcon" }
           // {title: "see details", field: }
         ]}
         data={data}

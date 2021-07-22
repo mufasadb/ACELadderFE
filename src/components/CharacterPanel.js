@@ -24,10 +24,10 @@ const useStyles = makeStyles((theme) => ({
 const CharacterPanel = (props) => {
   const classes = useStyles();
 
-  const onClickHandler = () => {
-    console.log(props.character);
-    props.viewHandler(props.character.id);
-  };
+  // const onClickHandler = () => {
+  //   console.log(props.character);
+  //   props.viewHandler(props.character.id);
+  // };
 
   return (
     <div className={classes.root}>
@@ -50,7 +50,7 @@ const CharacterPanel = (props) => {
           <Button className={classes.button} variant="outlined">
             {" "}
             <Link href={`/characters/${props.character.id}`}>
-              <a className="link"> See Details</a>
+              See Detail
             </Link>
           </Button>
         </Grid>

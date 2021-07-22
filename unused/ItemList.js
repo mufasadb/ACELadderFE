@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import ItemPanel from './ItemPanel'
 
 
-const ItemList = () => {
+const Admin = () => {
     const [items, setItems] = useState([]);
 
 
@@ -81,4 +81,4 @@ const ItemList = () => {
         </ThemeProvider>
     )
 }
-export default ItemList;
+export default Admin;

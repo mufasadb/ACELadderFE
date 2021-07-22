@@ -30,7 +30,7 @@ const AccountList = (props) => {
 
   useEffect(() => {
     getCharacter();
-  }, []);
+  });
 
   const theme = React.useMemo(
     () =>

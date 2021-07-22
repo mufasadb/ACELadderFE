@@ -28,6 +28,13 @@
       "react-app/jest"
     ]
   },
+  "browser": {
+    "colors": false,
+    "events": "eventemitter3",
+    "checkForModuleDuplicates": false,
+    "url": "./shims/url",
+    "tracer": false
+  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -5,7 +5,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
 }
 
@@ -37,7 +37,7 @@
   flex-direction: column;
   align-items: left;
   color: white;
-  bottom:50px;
+  /* bottom:50px; */
   top:200px;
   width: 90%;
   padding:5%;
@@ -48,10 +48,10 @@
 }
 .App-footer{
   background-color: #26334b;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  height: 50px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* color: white; */
+  /* height: 50px; */
 }
 
 .Character-List{
@@ -60,7 +60,7 @@
   background-color: #26334b;
 }
 .Character-Image{
-  height:100px;
+  /* height:100px; */
 }
 
 .Character{

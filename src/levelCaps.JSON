@@ -1,0 +1,504 @@
+{
+    "list": [
+        {
+            "Level": "1",
+            "Total XP": "0",
+            "XP to Gain": "525"
+        },
+        {
+            "Level": "2",
+            "Total XP": "525",
+            "XP to Gain": "1,235"
+        },
+        {
+            "Level": "3",
+            "Total XP": "1,760",
+            "XP to Gain": "2,021"
+        },
+        {
+            "Level": "4",
+            "Total XP": "3,781",
+            "XP to Gain": "3,403"
+        },
+        {
+            "Level": "5",
+            "Total XP": "7,184",
+            "XP to Gain": "5,002"
+        },
+        {
+            "Level": "6",
+            "Total XP": "12,186",
+            "XP to Gain": "7,138"
+        },
+        {
+            "Level": "7",
+            "Total XP": "19,324",
+            "XP to Gain": "10,053"
+        },
+        {
+            "Level": "8",
+            "Total XP": "29,377",
+            "XP to Gain": "13,804"
+        },
+        {
+            "Level": "9",
+            "Total XP": "43,181",
+            "XP to Gain": "18,512"
+        },
+        {
+            "Level": "10",
+            "Total XP": "61,693",
+            "XP to Gain": "24,297"
+        },
+        {
+            "Level": "11",
+            "Total XP": "85,990",
+            "XP to Gain": "31,516"
+        },
+        {
+            "Level": "12",
+            "Total XP": "117,506",
+            "XP to Gain": "39,878"
+        },
+        {
+            "Level": "13",
+            "Total XP": "157,384",
+            "XP to Gain": "50,352"
+        },
+        {
+            "Level": "14",
+            "Total XP": "207,736",
+            "XP to Gain": "62,261"
+        },
+        {
+            "Level": "15",
+            "Total XP": "269,997",
+            "XP to Gain": "76,465"
+        },
+        {
+            "Level": "16",
+            "Total XP": "346,462",
+            "XP to Gain": "92,806"
+        },
+        {
+            "Level": "17",
+            "Total XP": "439,268",
+            "XP to Gain": "112,027"
+        },
+        {
+            "Level": "18",
+            "Total XP": "551,295",
+            "XP to Gain": "133,876"
+        },
+        {
+            "Level": "19",
+            "Total XP": "685,171",
+            "XP to Gain": "158,538"
+        },
+        {
+            "Level": "20",
+            "Total XP": "843,709",
+            "XP to Gain": "187,025"
+        },
+        {
+            "Level": "21",
+            "Total XP": "1,030,734",
+            "XP to Gain": "218,895"
+        },
+        {
+            "Level": "22",
+            "Total XP": "1,249,629",
+            "XP to Gain": "255,366"
+        },
+        {
+            "Level": "23",
+            "Total XP": "1,504,995",
+            "XP to Gain": "295,852"
+        },
+        {
+            "Level": "24",
+            "Total XP": "1,800,847",
+            "XP to Gain": "341,805"
+        },
+        {
+            "Level": "25",
+            "Total XP": "2,142,652",
+            "XP to Gain": "392,470"
+        },
+        {
+            "Level": "26",
+            "Total XP": "2,535,122",
+            "XP to Gain": "449,555"
+        },
+        {
+            "Level": "27",
+            "Total XP": "2,984,677",
+            "XP to Gain": "512,121"
+        },
+        {
+            "Level": "28",
+            "Total XP": "3,496,798",
+            "XP to Gain": "583,857"
+        },
+        {
+            "Level": "29",
+            "Total XP": "4,080,655",
+            "XP to Gain": "662,181"
+        },
+        {
+            "Level": "30",
+            "Total XP": "4,742,836",
+            "XP to Gain": "747,411"
+        },
+        {
+            "Level": "31",
+            "Total XP": "5,490,247",
+            "XP to Gain": "844,146"
+        },
+        {
+            "Level": "32",
+            "Total XP": "6,334,393",
+            "XP to Gain": "949,053"
+        },
+        {
+            "Level": "33",
+            "Total XP": "7,283,446",
+            "XP to Gain": "1,064,952"
+        },
+        {
+            "Level": "34",
+            "Total XP": "8,384,398",
+            "XP to Gain": "1,192,712"
+        },
+        {
+            "Level": "35",
+            "Total XP": "9,541,110",
+            "XP to Gain": "1,333,241"
+        },
+        {
+            "Level": "36",
+            "Total XP": "10,874,351",
+            "XP to Gain": "1,487,491"
+        },
+        {
+            "Level": "37",
+            "Total XP": "12,361,842",
+            "XP to Gain": "1,656,447"
+        },
+        {
+            "Level": "38",
+            "Total XP": "14,018,289",
+            "XP to Gain": "1,841,143"
+        },
+        {
+            "Level": "39",
+            "Total XP": "15,859,432",
+            "XP to Gain": "2,046,202"
+        },
+        {
+            "Level": "40",
+            "Total XP": "17,905,634",
+            "XP to Gain": "2,265,837"
+        },
+        {
+            "Level": "41",
+            "Total XP": "20,171,471",
+            "XP to Gain": "2,508,528"
+        },
+        {
+            "Level": "42",
+            "Total XP": "22,679,999",
+            "XP to Gain": "2,776,124"
+        },
+        {
+            "Level": "43",
+            "Total XP": "25,456,123",
+            "XP to Gain": "3,061,734"
+        },
+        {
+            "Level": "44",
+            "Total XP": "28,517,857",
+            "XP to Gain": "3,379,914"
+        },
+        {
+            "Level": "45",
+            "Total XP": "31,897,771",
+            "XP to Gain": "3,723,676"
+        },
+        {
+            "Level": "46",
+            "Total XP": "35,621,447",
+            "XP to Gain": "4,099,570"
+        },
+        {
+            "Level": "47",
+            "Total XP": "39,721,017",
+            "XP to Gain": "4,504,444"
+        },
+        {
+            "Level": "48",
+            "Total XP": "44,225,461",
+            "XP to Gain": "4,951,099"
+        },
+        {
+            "Level": "49",
+            "Total XP": "49,176,560",
+            "XP to Gain": "5,430,907"
+        },
+        {
+            "Level": "50",
+            "Total XP": "54,607,467",
+            "XP to Gain": "5,957,868"
+        },
+        {
+            "Level": "51",
+            "Total XP": "60,565,335",
+            "XP to Gain": "6,528,910"
+        },
+        {
+            "Level": "52",
+            "Total XP": "67,094,245",
+            "XP to Gain": "7,153,414"
+        },
+        {
+            "Level": "53",
+            "Total XP": "74,247,659",
+            "XP to Gain": "7,827,968"
+        },
+        {
+            "Level": "54",
+            "Total XP": "82,075,627",
+            "XP to Gain": "8,555,414"
+        },
+        {
+            "Level": "55",
+            "Total XP": "90,631,041",
+            "XP to Gain": "9,353,933"
+        },
+        {
+            "Level": "56",
+            "Total XP": "99,984,974",
+            "XP to Gain": "10,212,541"
+        },
+        {
+            "Level": "57",
+            "Total XP": "110,197,515",
+            "XP to Gain": "11,142,646"
+        },
+        {
+            "Level": "58",
+            "Total XP": "121,340,161",
+            "XP to Gain": "12,157,041"
+        },
+        {
+            "Level": "59",
+            "Total XP": "133,497,202",
+            "XP to Gain": "13,252,160"
+        },
+        {
+            "Level": "60",
+            "Total XP": "146,749,362",
+            "XP to Gain": "14,441,758"
+        },
+        {
+            "Level": "61",
+            "Total XP": "161,191,120",
+            "XP to Gain": "15,731,508"
+        },
+        {
+            "Level": "62",
+            "Total XP": "176,922,628",
+            "XP to Gain": "17,127,265"
+        },
+        {
+            "Level": "63",
+            "Total XP": "194,049,893",
+            "XP to Gain": "18,635,053"
+        },
+        {
+            "Level": "64",
+            "Total XP": "212,684,946",
+            "XP to Gain": "20,271,765"
+        },
+        {
+            "Level": "65",
+            "Total XP": "232,956,711",
+            "XP to Gain": "22,044,909"
+        },
+        {
+            "Level": "66",
+            "Total XP": "255,001,620",
+            "XP to Gain": "23,950,783"
+        },
+        {
+            "Level": "67",
+            "Total XP": "278,952,403",
+            "XP to Gain": "26,019,833"
+        },
+        {
+            "Level": "68",
+            "Total XP": "304,972,236",
+            "XP to Gain": "28,261,412"
+        },
+        {
+            "Level": "69",
+            "Total XP": "333,233,648",
+            "XP to Gain": "30,672,515"
+        },
+        {
+            "Level": "70",
+            "Total XP": "363,906,163",
+            "XP to Gain": "33,287,878"
+        },
+        {
+            "Level": "71",
+            "Total XP": "397,194,041",
+            "XP to Gain": "36,118,904"
+        },
+        {
+            "Level": "72",
+            "Total XP": "433,312,945",
+            "XP to Gain": "39,163,425"
+        },
+        {
+            "Level": "73",
+            "Total XP": "472,476,370",
+            "XP to Gain": "42,460,810"
+        },
+        {
+            "Level": "74",
+            "Total XP": "514,937,180",
+            "XP to Gain": "46,024,718"
+        },
+        {
+            "Level": "75",
+            "Total XP": "560,961,898",
+            "XP to Gain": "49,853,964"
+        },
+        {
+            "Level": "76",
+            "Total XP": "610,815,862",
+            "XP to Gain": "54,008,554"
+        },
+        {
+            "Level": "77",
+            "Total XP": "664,824,416",
+            "XP to Gain": "58,473,753"
+        },
+        {
+            "Level": "78",
+            "Total XP": "723,298,169",
+            "XP to Gain": "63,314,495"
+        },
+        {
+            "Level": "79",
+            "Total XP": "786,612,664",
+            "XP to Gain": "68,516,464"
+        },
+        {
+            "Level": "80",
+            "Total XP": "855,129,128",
+            "XP to Gain": "74,132,190"
+        },
+        {
+            "Level": "81",
+            "Total XP": "929,261,318",
+            "XP to Gain": "80,182,477"
+        },
+        {
+            "Level": "82",
+            "Total XP": "1,009,443,795",
+            "XP to Gain": "86,725,730"
+        },
+        {
+            "Level": "83",
+            "Total XP": "1,096,169,525",
+            "XP to Gain": "93,748,717"
+        },
+        {
+            "Level": "84",
+            "Total XP": "1,189,918,242",
+            "XP to Gain": "101,352,108"
+        },
+        {
+            "Level": "85",
+            "Total XP": "1,291,270,350",
+            "XP to Gain": "109,524,907"
+        },
+        {
+            "Level": "86",
+            "Total XP": "1,400,795,257",
+            "XP to Gain": "118,335,069"
+        },
+        {
+            "Level": "87",
+            "Total XP": "1,519,130,326",
+            "XP to Gain": "127,813,148"
+        },
+        {
+            "Level": "88",
+            "Total XP": "1,646,943,474",
+            "XP to Gain": "138,033,822"
+        },
+        {
+            "Level": "89",
+            "Total XP": "1,784,977,296",
+            "XP to Gain": "149,032,822"
+        },
+        {
+            "Level": "90",
+            "Total XP": "1,934,009,687",
+            "XP to Gain": "160,890,604"
+        },
+        {
+            "Level": "91",
+            "Total XP": "2,094,900,291",
+            "XP to Gain": "173,648,795"
+        },
+        {
+            "Level": "92",
+            "Total XP": "2,268,549,086",
+            "XP to Gain": "187,372,170"
+        },
+        {
+            "Level": "93",
+            "Total XP": "2,455,921,256",
+            "XP to Gain": "202,153,736"
+        },
+        {
+            "Level": "94",
+            "Total XP": "2,658,074,992",
+            "XP to Gain": "218,041,909"
+        },
+        {
+            "Level": "95",
+            "Total XP": "2,876,116,901",
+            "XP to Gain": "235,163,399"
+        },
+        {
+            "Level": "96",
+            "Total XP": "3,111,280,300",
+            "XP to Gain": "253,547,862"
+        },
+        {
+            "Level": "97",
+            "Total XP": "3,364,828,162",
+            "XP to Gain": "273,358,532"
+        },
+        {
+            "Level": "98",
+            "Total XP": "3,638,186,694",
+            "XP to Gain": "294,631,836"
+        },
+        {
+            "Level": "99",
+            "Total XP": "3,932,818,530",
+            "XP to Gain": "317,515,914"
+        },
+        {
+            "Level": "100",
+            "Total XP": "4,250,334,444",
+            "XP to Gain": "0"
+        }
+    ]
+}

@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Age from "./editfunctions/AgeEdit";
 import Edit from "@material-ui/icons/Edit";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import Name from "./editfunctions/NameEdit";
 import Description from "./editfunctions/DescriptionEdit";
 import Race from "./editfunctions/RaceEdit";
@@ -125,7 +125,7 @@ const CharacterDisplay = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     getData();
-  }, []);
+  });
   const characterImage = (
     <img
       className=""
