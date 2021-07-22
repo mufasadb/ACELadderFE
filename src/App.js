@@ -47,7 +47,7 @@ const App = () => {
       <div className="App-content">
         <Grid >
 
-          <Button variant="contained">
+          {/* <Button variant="contained">
             <Link href="/">
              Ladder
             </Link>
@@ -63,7 +63,7 @@ const App = () => {
             <Link href="/accounts">
              Accounts
             </Link>
-          </Button>
+          </Button> */}
 
         </Grid>
         {/* <Button variant="contained">
