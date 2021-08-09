@@ -1,5 +1,7 @@
 import "./App.css";
 import CharacterList from "./components/CharacterList";
+import Acelogo from "./img/acelogo.png"
+
 // import ItemList from "../unused/ItemList";
 // import CharacterForm fro../unused/newCharacterter";
 // import React, { useState } from "react";
@@ -42,7 +44,8 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ACE Ladder</h1>
+        {/* <h1>ACE Ladder</h1> */}
+        <img src={Acelogo} />
       </header>
       <div className="App-content">
         <Grid >
@@ -97,7 +100,7 @@ const App = () => {
           {(params) => <CharacterDisplay id={params.id} baseURL={baseURL} />}
         </Route>
         {/* <Route path="/admin"> */}
-          {/* {() => <Admin baseURL={baseURL} />} */}
+        {/* {() => <Admin baseURL={baseURL} />} */}
         {/* </Route> */}
         {/* <Route path="/items/:id"> */}
         {/* {(params) => <ItemDisplay id={params.id} />} */}

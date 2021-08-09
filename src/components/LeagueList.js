@@ -137,7 +137,8 @@ const LeagueList = (props) => {
 
             {/* <TextField id="leagues" label="Leagues" type="text" value={leagues} onChange={handleChangeLeagues} /> */}
             <FormControl className={classes.formControl}>
-                <InputLabel id="demo-mutiple-chip-label">Leagues</InputLabel>
+                <span>Leagues</span>
+                <InputLabel id="demo-mutiple-chip-label"></InputLabel>
                 <Select
                     labelId="demo-mutiple-chip-label"
                     id="demo-mutiple-chip"

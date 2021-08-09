@@ -90,7 +90,7 @@ const Ladder = (props) => {
       let percent = progress / parseInt(c.xpToNext) * 100
       // console.log(percent)
       c.experienceBar =
-        <Tooltip title={`current = ${c.experience}.xpThisLevel = ${c.xpThisLevel} progres = ${progress}. toNext=${c.xpToNext}. percent = ${percent}`}>
+        <Tooltip title={`${percent.toFixed(2)}%`}>
           <LinearProgress variant="buffer" value={percent} valueBuffer={99} />
         </Tooltip>
     }
@@ -150,7 +150,7 @@ const Ladder = (props) => {
           filtering: false, sorting: false, paging: false,
           rowStyle: rowData => ({
             backgroundColor: !rowData.isAlive ? '#212121' : "#414141",
-            color: !rowData.isAlive? '#AAA': 'FFF'
+            color: !rowData.isAlive ? '#AAA' : 'FFF'
           })
         }}
         columns={[

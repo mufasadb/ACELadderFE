@@ -130,40 +130,45 @@ const ClassList = (props) => {
         }
         setClassSet(value);
     }
+    const handleDelete = (event) => {
+        console.log(event.target)
+        console.log("to delete");
+    }
 
 
     return (
 
 
-                <Paper className={classes.paper}>
+        <Paper className={classes.paper}>
 
-                    {/* <TextField id="leagues" label="Leagues" type="text" value={leagues} onChange={handleChangeLeagues} /> */}
-                    <FormControl className={classes.formControl}>
-                        <InputLabel id="demo-mutiple-chip-label">Classes</InputLabel>
-                        <Select
-                            labelId="demo-mutiple-chip-label"
-                            id="demo-mutiple-chip"
-                            multiple
-                            value={classSet}
-                            onChange={handleChangeLeagues}
-                            input={<Input id="select-multiple-chip" />}
-                            renderValue={(selected) => (
-                                <div className={classes.chips}>
-                                    {selected.map((value) => (
-                                        <Chip key={value} label={value} className={classes.chip} />
-                                    ))}
-                                </div>
-                            )}
-                            MenuProps={MenuProps}
-                        >
-                            {classData.map((asc) => (
-                                <MenuItem key={asc} value={asc} style={getStyles(classSet, asc, theme)}>
-                                    {asc}
-                                </MenuItem>
+            {/* <TextField id="leagues" label="Leagues" type="text" value={leagues} onChange={handleChangeLeagues} /> */}
+            <FormControl className={classes.formControl}>
+                <span>Classes</span>
+                <InputLabel id="demo-mutiple-chip-label"></InputLabel>
+                <Select
+                    labelId="demo-mutiple-chip-label"
+                    id="demo-mutiple-chip"
+                    multiple
+                    value={classSet}
+                    onChange={handleChangeLeagues}
+                    input={<Input id="select-multiple-chip" />}
+                    renderValue={(selected) => (
+                        <div className={classes.chips}>
+                            {selected.map((value) => (
+                                <Chip key={value} label={value} className={classes.chip} />
                             ))}
-                        </Select>
-                    </FormControl>
-                </Paper>
+                        </div>
+                    )}
+                    MenuProps={MenuProps}
+                >
+                    {classData.map((asc) => (
+                        <MenuItem key={asc} value={asc} style={getStyles(classSet, asc, theme)}>
+                            {asc}
+                        </MenuItem>
+                    ))}
+                </Select>
+            </FormControl>
+        </Paper>
 
     )
 }
